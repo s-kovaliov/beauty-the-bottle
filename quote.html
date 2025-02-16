@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Get A Quote</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20250216221918">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header" data-scroll="20" data-scroll-show>
+			<div class="header__container-big">
+				<button type="button" class="menu__icon icon-menu"><span></span></button>
+				<a href="" class="header__logo"><img src="img/logo.svg" alt=""></a>
+				<div class="header__menu menu">
+					<nav class="menu__body">
+						<a href="" class="header__logo header__logo--mob"><img src="img/logo.svg" alt=""></a>
+						<ul class="menu__list">
+							<li><a href="">Home</a></li>
+							<li><a href="">Bedazzled Bottles & Glassware</a></li>
+							<li><a href="">Accessories</a></li>
+							<li><a href="">For Event Planners</a></li>
+							<li><a href="">About Us</a></li>
+						</ul>
+						<a href="#" class="header__btn btn">Request A Quote</a>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__design design design--quote">
+				<div class="design__container design__container--quote">
+					<div class="design__left">
+						<div class="design__breadcrumbs breadcrumbs breadcrumbs--quote">
+							<a href="#" class="breadcrumbs__link">Home</a>
+							<span class="breadcrumbs__sep">/</span>
+							<a href="#" class="breadcrumbs__link">Bedazzled Bottles & Glassware</a>
+							<span class="breadcrumbs__sep">/</span>
+							<a href="#" class="breadcrumbs__link active">Bedazzled Bottles & Glassware</a>
+						</div>
+						<h2 class="design__title">Ready To Order Your Custom Bedazzled Bottle?</h2>
+						<div class="design__text">
+							<p>Are you ready to transform your vision into a dazzling reality? Fill out our form below to submit your order request and get started on your one-of-a-kind keepsake.</p>
+							<p>For a detailed look at our process, please visit our <span>How It Works</span> section.</p>
+						</div>
+						<form class="design__form form-quote" action="files/sendmail/sendmail.php" method="POST" enctype="multipart/form-data">
+							<div class="form-quote__wrapper">
+								<h3 class="form-quote__title">Order Request Form</h3>
+								<div class="form-quote__step"><span>Step 1:</span> Contact Information</div>
+								<div class="form-quote__rows">
+									<div class="form-quote__row">
+										<label class="form-quote__label" for="name">*Name (First and Last)</label>
+										<input type="text" name="name" placeholder="What’s your name?" class="form-quote__input">
+									</div>
+									<div class="form-quote__row">
+										<label class="form-quote__label" for="mail">*Email Address</label>
+										<input type="text" name="mail" data-error="Error" placeholder="Type your email address" class="form-quote__input">
+									</div>
+									<div class="form-quote__row">
+										<label class="form-quote__label" for="sel">*How did you hear about Beauty & The Bottle?</label>
+										<select name="sel" data-class-modif="form">
+											<option value="1" selected>Referral</option>
+											<option value="2">Referral</option>
+											<option value="3">Referral</option>
+											<option value="4">Referral</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="form-quote__wrapper">
+								<h3 class="form-quote__title">Order Request Form</h3>
+								<div class="form-quote__step"><span>Step 2:</span> Project Details</div>
+								<div class="form-quote__rows">
+									<div class="form-quote__row">
+										<label class="form-quote__label" for="budget">*Budget</label>
+										<select name="budget" data-class-modif="form">
+											<option value="1" selected>Select your budget range</option>
+											<option value="2">$1000 - $2000</option>
+											<option value="3">$2000 - $3000</option>
+											<option value="4">$3000 - $4000</option>
+										</select>
+									</div>
+									<div class="form-quote__row">
+										<label class="form-quote__label" for="timeline">Timeline (Standard Delivery is 4-6 weeks from order confirmation)</label>
+										<input type="text" name="timeline" placeholder="What is your desired timeline?" class="form-quote__input">
+									</div>
+									<div class="form-quote__row">
+										<div class="checkbox">
+											<input id="rush" data-error="Error" class="checkbox__input" type="checkbox" value="1" name="rush">
+											<label for="rush" class="checkbox__label"><span class="checkbox__text">Rush order? (fees apply)</span></label>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="form-quote__wrapper active">
+								<h3 class="form-quote__title">Order Request Form</h3>
+								<div class="form-quote__step"><span>Step 3:</span> Describe Your Vision</div>
+								<div class="form-quote__text">Tell us about your Bottle Project. Include details like your design ideas (for example: a photo of the couple, the name written in pearls, intricate crystal arrangements, etc.).</div>
+								<div class="form-quote__rows">
+									<div class="form-quote__row">
+										<textarea name="vision" id="vision">A classic design featuring a gold-embellished bottle with the couple’s initials delicately crafted in pearls.”
+												“An elegant vintage style with hand-applied embellishments and a personalized message that tells our love story.</textarea>
+									</div>
+									<div class="form-quote__row-file">
+										<label for="fileUpload" class="form-quote__btn btn btn--white">Upload Files</label>
+										<input type="file" name="fileUpload" id="fileUpload" style="display: none;">
+										<p class="form-quote__upload-note">Supported formats (.jpg, .webp) - 10MB upload limit</p>
+									</div>
+								</div>
+							</div>
+							<div class="form-quote__buttons" id="buttonContainer"></div>
+						</form>
+					</div>
+					<div class="design__right elevate__right">
+						<div class="elevate__wrapper">
+							<img class="elevate__video ibg" src="img/main/01.webp" alt="Image">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__steps steps">
+				<div class="steps__container">
+					<h2 class="steps__title">Ready To Order?</h2>
+					<div class="steps__gold-title">Let’s bring your vision to life.</div>
+					<div class="steps__text">Explore our collection and design something beautiful to celebrate your day.
+						Beauty & The Bottle is here to help you craft memories worth toasting.</div>
+					<div class="steps__sub-title">Here’s How It Works</div>
+					<div class="steps__slider swiper">
+						<div class="steps__wrapper swiper-wrapper">
+							<div class="steps__slide item-step swiper-slide">
+								<div class="item-step__num">Step 1</div>
+								<div class="item-step__title">IMAGINE</div>
+								<img src="img/steps-icon.svg" alt="Image">
+								<div class="item-step__text">
+									<p>Start by selecting the perfect theme to match your special occasion. </p>
+									<p>Choose from a variety of <span>bottle sizes</span>, <span>gem colors</span>, and <span>available materials</span>, and <span>add photos</span> that reflect your unique story.</p>
+								</div>
+							</div>
+							<div class="steps__slide item-step swiper-slide">
+								<div class="item-step__num">Step 2</div>
+								<div class="item-step__title">PERSONALIZE</div>
+								<img src="img/steps-icon.svg" alt="Image">
+								<div class="item-step__text">
+									<p>Make it truly yours! <span>Add meaningful details like photos, names, dates, or heartfelt messages</span> that capture the essence of your celebration.</p>
+								</div>
+							</div>
+							<div class="steps__slide item-step swiper-slide">
+								<div class="item-step__num">Step 3</div>
+								<div class="item-step__title">ENJOY</div>
+								<img src="img/steps-icon.svg" alt="Image">
+								<div class="item-step__text">
+									<p><span>Sit back and relax</span>—we’ll handle the rest! Once your masterpiece is finalized, we carefully craft your order and <span>ship it directly to your doorstep</span> in special protective packaging.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="steps__footer-title">Let’s start creating something beautiful together!</div>
+					<a href="#" class="steps__btn btn">Get A Quote</a>
+				</div>
+			</section>
+			<section class="page__faq faq">
+				<div class="faq__container">
+					<div class="faq__left">
+						<h2 class="faq__title">Frequently Asked Questions</h2>
+						<div class="faq__text">Below are some of the most frequently asked questions that we get from our customers. <span>Click on a question to reveal the answer.</span></div>
+						<div data-spollers class="faq__spollers spollers">
+							<details class="spollers__item">
+								<summary class="spollers__title"><img src="img/faq-check.svg" alt="Image">Are your products handmade?</summary>
+								<div class="spollers__body">Yes, each product is handcrafted with care and attention to detail, ensuring a one-of-a-kind creation. No two items are exactly alike!</div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title"><img src="img/faq-check.svg" alt="Image">Can I customize my order?</summary>
+								<div class="spollers__body"></div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title"><img src="img/faq-check.svg" alt="Image">How long do custom orders take?</summary>
+								<div class="spollers__body"></div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title"><img src="img/faq-check.svg" alt="Image">What is your return/exchange policy?</summary>
+								<div class="spollers__body"></div>
+							</details>
+							<details class="spollers__item">
+								<summary class="spollers__title"><img src="img/faq-check.svg" alt="Image">Do you only design bottles for weddings?</summary>
+								<div class="spollers__body"></div>
+							</details>
+						</div>
+						<a href="#" class="faq__btn btn">See All FAQs</a>
+					</div>
+					<div class="faq__right">
+						<div class="faq__pic">
+							<img class="faq__image ibg" src="img/main/03.webp" alt="Image">
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="page__mail mail">
+				<div class="mail__container">
+					<div class="mail__wrapper">
+						<h2 class="mail__title">Subscribe To Our Email</h2>
+						<div class="mail__text">Subscribe to our mailing list for insider news, product launches, and more.</div>
+						<form action="files/sendmail/sendmail.php" method="POST" class="mail__form">
+							<input class="mail__input" type="text" name="form[email]" data-error="Error" placeholder="E-mail">
+							<button type="submit" class="mail__button _icon-mail-arrow"></button>
+						</form>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__container-big">
+				<a href="" class="footer__logo"><img src="img/logo.svg" alt=""></a>
+				<div class="footer__text text-footer">
+					<h2 class="text-footer__title">Our Mission</h2>
+					<div class="text-footer__text">At Beauty & The Bottle, we empower brides and their squads to celebrate life’s most cherished moments with artfully crafted, one-of-a-kind accessories that sparkle as brightly as their memories. By blending meticulous handiwork, personalized details, and timeless elegance, we transform everyday items—from bridal hangers to champagne glasses—into unforgettable keepsakes. Our mission is to infuse every wedding, bridal shower, and milestone event with a touch of magic, ensuring that every glittering detail reflects the love, joy, and individuality of the moments you’ll treasure forever.</div>
+				</div>
+				<div class="footer__links links-footer">
+					<h2 class="links-footer__title">Quick Links</h2>
+					<ul class="links-footer__list">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Bedazzled Bottles & Glassware</a></li>
+						<li><a href="#">Accessories</a></li>
+						<li><a href="#">For Event Planners</a></li>
+						<li><a href="#">Shipping & Returns</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20250216221918"></script>
+</body>
+
+</html>
